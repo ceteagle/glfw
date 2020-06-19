@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="glfw" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="debug/bin/glfw" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="debug/obj/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="release/bin/glfw" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="release/obj/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-D_GLFW_WIN32" />
+			<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+		</Compiler>
+		<Unit filename="include/GLFW/glfw3.h" />
+		<Unit filename="include/GLFW/glfw3native.h" />
+		<Unit filename="src/context.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/glfw_config.h.in" />
+		<Unit filename="src/init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/monitor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/osmesa_context.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/osmesa_context.h" />
+		<Unit filename="src/vulkan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/wgl_context.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/wgl_context.h" />
+		<Unit filename="src/win32_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/win32_joystick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/win32_joystick.h" />
+		<Unit filename="src/win32_thread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/win32_time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/win32_window.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/window.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
